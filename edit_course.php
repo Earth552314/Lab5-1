@@ -1,7 +1,7 @@
 <?php
 require("connect_db.php");
 $course_code = $_GET["course_code"];
-$sql = "SELECT * FROM course WHERE course_code='$course_code'";
+$sql = "SELECT * FROM courses WHERE course_code='$course_code'";
 $result = mysqli_query($conn, $sql);
 $course = mysqli_fetch_assoc($result);
 echo "<center>";
